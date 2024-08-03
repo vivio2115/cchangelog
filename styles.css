@@ -46,6 +46,7 @@ header {
 
 .title-container {
     text-align: center;
+    flex-grow: 1;
 }
 
 .title-container h1 {
@@ -149,20 +150,7 @@ main {
         font-size: 18px;
     }
 
-    #changelog {
-        gap: 20px;
-    }
-
-    .changelog-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .changelog-item h2 {
-        font-size: 18px;
-    }
-
-    .changelog-item p {
-        margin-top: 10px;
+    main {
+        padding: 10px;
     }
 }
