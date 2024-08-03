@@ -15,6 +15,16 @@
             "version": "Update 4.8.003",
             "description": "Critical hotfix for server stability.",
             "type": "hotfix"
+        },
+        {
+            "version": "Update 4.9.002",
+            "description": "New features added to the role play interface.",
+            "type": "patch"
+        },
+        {
+            "version": "Update 4.8.003",
+            "description": "Critical hotfix for server stability.",
+            "type": "hotfix"
         }
     ]
 }
