@@ -2,7 +2,7 @@
     "version": "5.0.001",
     "changelog": [
         {
-            "version": "Update 5.0.001",
+            "version": "Update 5.0.002",
             "description": "Various bug fixes and performance improvements.",
             "type": "fix"
         },
