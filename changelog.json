@@ -3,11 +3,13 @@
     "changelog": [
         {
             "version": "Update 5.0.001",
-            "description": "Various bug fixes and performance improvements."
+            "description": "Various bug fixes and performance improvements.",
+            "type": "fix"
         },
         {
             "version": "Update 4.9.002",
-            "description": "New features added to the role play interface."
+            "description": "New features added to the role play interface.",
+            "type": "add"
         }
     ]
 }
