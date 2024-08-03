@@ -9,8 +9,18 @@ document.addEventListener("DOMContentLoaded", function() {
             data.changelog.forEach(item => {
                 const changelogItem = document.createElement('div');
                 changelogItem.className = 'changelog-item';
+
+                let icon;
+                if (item.type === 'add') {
+                    icon = '<i class="fas fa-plus-circle"></i>';
+                } else if (item.type === 'remove') {
+                    icon = '<i class="fas fa-minus-circle"></i>';
+                } else if (item.type === 'fix') {
+                    icon = '<i class="fas fa-tools"></i>';
+                }
+
                 changelogItem.innerHTML = `
-                    <h2>${item.version}</h2>
+                    <h2>${icon}${item.version}</h2>
                     <p>${item.description}</p>
                 `;
                 changelogContainer.appendChild(changelogItem);
