@@ -11,12 +11,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 changelogItem.className = 'changelog-item';
 
                 let icon;
-                if (item.type === 'add') {
-                    icon = '<i class="fas fa-plus-circle"></i>';
-                } else if (item.type === 'remove') {
-                    icon = '<i class="fas fa-minus-circle"></i>';
-                } else if (item.type === 'fix') {
-                    icon = '<i class="fas fa-tools"></i>';
+                if (item.type === 'update') {
+                    icon = '<i class="fas fa-star"></i>';
+                } else if (item.type === 'patch') {
+                    icon = '<i class="fas fa-feather-alt"></i>';
+                } else if (item.type === 'hotfix') {
+                    icon = '<i class="fas fa-tint"></i>';
                 }
 
                 changelogItem.innerHTML = `
