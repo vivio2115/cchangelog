@@ -22,7 +22,7 @@ header {
 
 .logo-container {
     position: absolute;
-    left: 20px;
+    left: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,6 +31,13 @@ header {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .logo-container img {
@@ -44,7 +51,16 @@ header {
 
 .title-container h1 {
     margin: 0;
-    color: #ff7f50;
+    background: linear-gradient(90deg, #ff7f50, #20b2aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .title-container h2 {
@@ -62,7 +78,7 @@ main {
 #changelog {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px; /* Increased gap for more space between tiles */
 }
 
 .changelog-item {
@@ -72,6 +88,8 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    display: flex;
+    align-items: center;
 }
 
 .changelog-item:hover {
@@ -81,9 +99,16 @@ main {
 .changelog-item h2 {
     margin-top: 0;
     color: #ff7f50;
+    display: flex;
+    align-items: center;
+}
+
+.changelog-item h2 i {
+    margin-right: 10px;
 }
 
 .changelog-item p {
     margin: 0;
     color: #333333;
+    margin-left: 10px;
 }
