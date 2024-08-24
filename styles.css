@@ -131,7 +131,7 @@ main {
     gap: 20px;
 }
 
-/* Mobile responsiveness */
+/* Mobile responsiveness ttt */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
